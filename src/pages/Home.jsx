@@ -18,7 +18,11 @@ function Home() {
   <>
      <div>
       {product.map((product)=>(
-
+        <div key={product.id}>
+         <img src={product.img} alt="" />
+         <p>{product.narxi}</p>
+         <p>{product.oyiga}</p>
+        </div>
       ))}
      </div>
   </>
