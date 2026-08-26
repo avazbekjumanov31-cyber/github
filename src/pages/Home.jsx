@@ -16,12 +16,13 @@ function Home() {
 
   return (
     <>
-      <div>
+      <div className=''>
         {product.map((product) => (
           <div key={product.id}>
-            <img src={product.img} alt="" />
+            <img className='w-100' src={product.img} alt="" />
             <p>{product.narxi}</p>
             <p>{product.oyiga}</p>
+            <p>{product.malumot}</p>
           </div>
         ))}
       </div>
