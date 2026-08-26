@@ -1,4 +1,5 @@
 import React from 'react';
+import Home from './pages/Home';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -33,6 +34,8 @@ function App() {
 
   return (
     <div>
+     
+
       <main className="max-w-7xl mx-auto px-4 py-6">
         <Swiper
           spaceBetween={20}
@@ -58,13 +61,15 @@ function App() {
                 </span>
 
                 <div className="max-w-lg space-y-3">
-                  <h2 className="text-3xl md:text-5xl font-black tracking-tight drop-shadow-sm">
+                  <h2 className="text-3xl md:text-5xl font-black tracking-tight">
                     {slide.title}
                   </h2>
+
                   <p className="text-white/90 text-sm md:text-lg font-medium">
                     {slide.subtitle}
                   </p>
-                  <button className="mt-4 bg-white text-gray-900 font-bold px-6 py-3 rounded-2xl hover:bg-amber-400 active:scale-95 transition-all shadow-md">
+
+                  <button className="mt-4 bg-white text-gray-900 font-bold px-6 py-3 rounded-2xl hover:bg-amber-400 transition-all shadow-md">
                     Xarid qilish
                   </button>
                 </div>
@@ -77,6 +82,7 @@ function App() {
           ))}
         </Swiper>
       </main>
+       <Home />
     </div>
   );
 }
