@@ -16,10 +16,14 @@ function Home() {
 
   return (
     <>
-      <div className=''>
+      <div className='ml-10 grid grid-cols-5 gap-5'>
         {product.map((product) => (
           <div key={product.id}>
-            <img className='w-100' src={product.img} alt="" />
+            <img
+              className='w-60 h-70'
+              src={product.img}
+              alt=""
+            />
             <p>{product.narxi}</p>
             <p>{product.oyiga}</p>
             <p>{product.malumot}</p>

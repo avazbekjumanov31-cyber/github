@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function App() {
+function y() {
   return (
     <footer className="bg-[#22262a] text-white">
       <div className="max-w-[1350px] mx-auto px-8 py-12">
@@ -119,4 +119,4 @@ function App() {
   );
 }
 
-export default App;
+export default y;
