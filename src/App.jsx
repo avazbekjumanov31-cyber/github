@@ -84,7 +84,7 @@ function App() {
       </main>
        <Home />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
